@@ -1,0 +1,59 @@
+<html>
+  <head>
+    
+    
+  </head>
+  <body>
+    
+    <style>
+		 
+		 #canvas{
+		border-style: solid;
+		border-color: black;
+		background-image: url("background.jpg");
+			background-repeat:no-repeat;
+  			background-size:auto%;
+  			background-position:0px 0px;
+		 }
+		 
+		 .text{
+			 color: cyan;
+			 position:absolute;
+			 user-select:none;
+		 }
+		 #message{
+			 font-size:45px;
+			 position:absolute;
+			 left:191px;
+			 top:250px;
+		 }
+		 #explanation{
+			 font-size:26px;
+  			 top:470px;
+			 left:191px;
+		 }
+		 
+    </style>
+	  <script>
+	  document.addEventListener("keydown", e => {
+	  var keyDown = e.code;
+	 if(keyDown == 'KeyS'){
+    window.location.href = "lvl1.html";
+	 }
+    });
+
+	  </script>
+	  
+	  <div class="text" id="message">You found the first Easter Egg!  <br>
+		  The first code is 342606 <br>(You should write that down)</div>
+	  
+	  <div class="text" id="explanation">Press S to return to the game </div>
+	  
+    
+    <canvas id="canvas" width="1080" height="700"></canvas>
+    
+  </body>
+  
+  
+  
+</html>

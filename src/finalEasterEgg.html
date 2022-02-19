@@ -1,0 +1,81 @@
+<html>
+  <head>
+    
+    
+  </head>
+  <body>
+    
+    <style>
+		 
+		 #canvas{
+		border-style: solid;
+		border-color: black;
+		background-image: url("background.jpg");
+			background-repeat:no-repeat;
+  			background-size:auto%;
+  			background-position:0px 0px;
+		 }
+		 
+		 .text{
+			 color: red;
+			 position:absolute;
+			 user-select:none;
+		 }
+		 #message{
+			 font-size:60px;
+			 position:absolute;
+			 left:191px;
+			 top:210px;
+		 }
+		 #thankyou{
+			 color:lime;
+			 font-size:34px;
+  			 top:300px;
+			 left:191px;
+		 }
+		 #reward{
+			color:cyan;
+			 font-size:34px;
+  			 top:390px;
+			 left:191px; 
+		 }
+		 #start{
+			 color:cyan;
+			 font-size:28px;
+  			 top:540px;
+			 left:191px;
+		 }
+		 #link{
+			 color:cyan;
+			 font-size:28px;
+  			 top:590px;
+			 left:191px;
+		 }
+    </style>
+	  <script>
+	  document.addEventListener("keydown", e => {
+	  var keyDown = e.code;
+	 if(keyDown == 'KeyS'){
+    //window.location.href = "lvl3.html";
+	 }
+    });
+
+	  </script>
+	  
+	  <div class="text" id="message">Thank You!!!  </div>
+		  <div class ="text" id="thankyou">I  don't know why you played this game <br>this much but thank you anyway!!</div>
+	  <div class="text" id="reward">Reward?  Oh you want a reward? <br> Well... If you knew where to look you'd<br> already have your reward... </div>
+	  
+	  <div class="text" id="start">And well... If you dont know where to look I suggest you start here:</div>
+	 <div class="text" id="link"> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: lime" target="_blank"> https://www.youtube.com/watch?v=dQw4w9WgXcQ </a></div>
+														
+	  
+	  
+    
+   <canvas id="canvas" width="1080" height="700"></canvas>
+    
+  </body>
+  
+  
+  
+</html>

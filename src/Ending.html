@@ -1,0 +1,88 @@
+<html>
+  <head>
+    
+    
+  </head>
+  <body>
+	  
+	  <div class="text" id="message">Thank you for playing!</div>
+	  
+	  <div class="text" id="explanation">Game Code by: Stephen Viray  |  Level and Character Design by: Andrew Vella 
+ |  Music by: Nicholas Poblete</div>
+	  
+	  <div class="text" id="form">If you found all of the easter eggs, type all 3 codes out one after another down here:</div>
+	  
+	  
+	  <div>
+	  <canvas id="canvas" width="1080" height="700"></canvas>
+		 <input id="box" type="text" style="position:absolute;left:260px;top:500px;width:600px;height:50px;" placeholder="ex: 937183098264173890"/>
+	  </div>
+    
+    <style>
+    	
+			#canvas{
+		border-style: solid;
+		border-color: black;
+		background-image: url("background.jpg");
+			background-repeat:no-repeat;
+  			background-size:auto%;
+  			background-position:0px 0px;
+
+		 }
+		 
+		 
+		 .text{
+			 color: cyan;
+			 position:absolute;
+			 user-select:none;
+			 
+		 }
+		 #message{
+			 font-size:80px;
+			 position:absolute;
+			 left:200px;
+			 top:250px;
+		 }
+		 #explanation{
+			 font-size:22px;
+  			 top:680px;
+			 left:20px
+		 }
+		 
+		 #form{
+			 font-size:22px;
+  			 top:450px;
+			 left:200px
+		 }
+		 
+    </style>
+	  <script>
+		  
+		  var canvas = document.getElementById('canvas');
+        var canvasContext= canvas.getContext('2d');
+		  document.addEventListener("keyup", e => {
+		keyUp = e.code;
+		if(keyUp == "Enter") getText();
+    
+    });
+		  function getText(){
+		  var text = document.getElementById("box").value;
+		  if(text == /*heheh well played if you found this*/ "342606369335382454") window.location.href = "finalEasterEgg.html";
+		  else{
+			  canvasContext.fillStyle='red';
+			  canvasContext.font='20px serif';
+      	  canvasContext.fillText("That's the wrong code", 250, 565); 
+		  }
+		  }
+
+	  </script>
+	  
+	  
+    
+    
+    
+  </body>
+  
+  
+  
+</html>
